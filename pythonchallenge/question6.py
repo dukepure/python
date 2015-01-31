@@ -18,7 +18,7 @@ def get_next(file_num):
     file_name = "%s.txt" % file_num
     mresult = re.search('(\d+)', all_content_dict[file_name][0])
     next_num = mresult.group() if mresult else ""
-    print next_num
+    # print next_num
     comment_list.append(all_content_dict[file_name][1])
     
     return next_num
